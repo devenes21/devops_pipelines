@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:  # <-- Εδώ είναι σωστά
+    steps:
       - name: Checkout Code
         uses: actions/checkout@v5
 
@@ -17,7 +17,7 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install  # μικρό i, όχι Install
+        run: npm install
 
       - name: Run tests
         run: npm test
